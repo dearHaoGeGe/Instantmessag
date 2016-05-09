@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/user_bg_gril">
+
+    <ImageView
+        android:id="@+id/register_center"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true" />
+
+    <EditText
+        android:id="@+id/register_passWord"
+        style="@style/MyEditText"
+        android:layout_below="@+id/register_center"
+        android:layout_marginBottom="10dp"
+        android:hint="请输入密码"
+        android:password="true"/>
+
+    <EditText
+        android:id="@+id/register_userName"
+        style="@style/MyEditText"
+        android:hint="用户名"
+        android:layout_above="@+id/register_passWord"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:id="@+id/register_confirm"
+        style="@style/MyEditText"
+        android:layout_below="@+id/register_passWord"
+        android:layout_marginTop="10dp"
+        android:password="true"
+        android:hint="请确认密码" />
+
+    <Button
+        style="@style/MyButton"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/register_confirm"
+        android:id="@+id/register_submit"
+        android:text="注册"
+        android:textSize="18sp" />
+
+</RelativeLayout>

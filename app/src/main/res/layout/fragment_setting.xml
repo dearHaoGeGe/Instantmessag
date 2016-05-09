@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@style/SettingTitleTextView"
+            android:text="新消息提醒"/>
+
+        <Button
+            style="@style/SettingLineButton"/>
+
+        <LinearLayout style="@style/SettingLinearLayout">
+
+            <TextView
+                style="@style/SettingTextBig"
+                android:text="接收新消息通知" />
+
+            <com.my.instantmessag.widget.CheckSwitchButton
+                android:id="@+id/checkSwitchButton_TiXing"
+                style="@style/SettingCheckSwitchButton" />
+
+        </LinearLayout>
+
+        <Button
+            style="@style/SettingLineButton"/>
+
+        <LinearLayout style="@style/SettingLinearLayout">
+
+            <TextView
+                style="@style/SettingTextBig"
+                android:text="声音" />
+
+            <com.my.instantmessag.widget.CheckSwitchButton
+                android:id="@+id/checkSwitchButton_voice"
+                style="@style/SettingCheckSwitchButton" />
+
+        </LinearLayout>
+
+        <Button
+            style="@style/SettingLineButton"/>
+
+        <LinearLayout style="@style/SettingLinearLayout">
+
+            <TextView
+                style="@style/SettingTextBig"
+                android:text="震动" />
+
+            <com.my.instantmessag.widget.CheckSwitchButton
+                android:id="@+id/checkSwitchButton_shock"
+                style="@style/SettingCheckSwitchButton" />
+
+        </LinearLayout>
+
+        <Button
+            style="@style/SettingLineButton"/>
+
+        <TextView
+            style="@style/SettingTitleTextView"
+            android:text="聊天设置" />
+
+        <Button
+            style="@style/SettingLineButton"/>
+
+        <LinearLayout style="@style/SettingLinearLayout">
+
+            <TextView
+                style="@style/SettingTextBig"
+                android:text="使用扬声器播放语音" />
+
+            <com.my.instantmessag.widget.CheckSwitchButton
+                android:id="@+id/checkSwitchButton_UseSpeaker"
+                style="@style/SettingCheckSwitchButton" />
+
+        </LinearLayout>
+
+        <Button
+            style="@style/SettingLineButton"/>
+
+        <LinearLayout style="@style/SettingLinearLayout"
+            android:id="@+id/linearLayout_BlackList">
+
+            <TextView
+                style="@style/SettingTextBig"
+                android:text="通讯录黑名单" />
+
+            <com.my.instantmessag.widget.CheckSwitchButton
+                style="@style/SettingCheckSwitchButton"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <Button
+            style="@style/SettingLineButton"/>
+
+        <LinearLayout style="@style/SettingLinearLayout"
+            android:id="@+id/linearLayout_PersonData">
+
+            <TextView
+                style="@style/SettingTextBig"
+                android:text="个人资料" />
+
+            <com.my.instantmessag.widget.CheckSwitchButton
+                style="@style/SettingCheckSwitchButton"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <Button
+            style="@style/SettingLineButton"/>
+
+        <LinearLayout style="@style/SettingLinearLayout"
+            android:id="@+id/linearLayout_doctor">
+
+
+            <TextView
+                style="@style/SettingTextBig"
+                android:text="诊断" />
+
+            <com.my.instantmessag.widget.CheckSwitchButton
+                style="@style/SettingCheckSwitchButton"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <Button
+            style="@style/SettingLineButton"/>
+
+        <LinearLayout style="@style/SettingLinearLayout"
+            android:id="@+id/linearLayout_ios">
+
+            <TextView
+                style="@style/SettingTextBig"
+                android:text="IOS离线推送昵称" />
+
+            <com.my.instantmessag.widget.CheckSwitchButton
+                style="@style/SettingCheckSwitchButton"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <Button
+            style="@style/SettingLineButton"/>
+
+        <LinearLayout style="@style/SettingLinearLayout">
+
+            <TextView
+                style="@style/SettingTextBig"
+                android:text="允许聊天室群主离开" />
+
+            <com.my.instantmessag.widget.CheckSwitchButton
+                android:id="@+id/checkSwitchButton_Leave"
+                style="@style/SettingCheckSwitchButton" />
+
+        </LinearLayout>
+
+        <Button
+            style="@style/SettingLineButton"/>
+
+        <LinearLayout style="@style/SettingLinearLayout">
+
+            <TextView
+                style="@style/SettingTextBig"
+                android:text="退出群组时删除聊天数据" />
+
+            <com.my.instantmessag.widget.CheckSwitchButton
+                android:id="@+id/checkSwitchButton_DelData"
+                style="@style/SettingCheckSwitchButton" />
+
+        </LinearLayout>
+
+        <Button
+            style="@style/SettingLineButton"/>
+
+        <LinearLayout style="@style/SettingLinearLayout">
+
+            <TextView
+                style="@style/SettingTextBig"
+                android:text="自动同意群组加群邀请" />
+
+            <com.my.instantmessag.widget.CheckSwitchButton
+                android:id="@+id/checkSwitchButton_Agree"
+                style="@style/SettingCheckSwitchButton" />
+
+        </LinearLayout>
+
+        <Button
+            style="@style/SettingLineButton"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#EE3B3B"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="退出当前账号"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

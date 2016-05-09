@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/accelerate_interpolator">
+    <translate
+        android:duration="600"
+        android:fromYDelta="0.0"
+        android:toYDelta="100.0%p" />
+
+    <!-- 这个动画的用法,上下交错效果 -->
+    <!--overridePendingTransition(R.anim.slide_up_in,R.anim.slide_down_out);-->
+</set>

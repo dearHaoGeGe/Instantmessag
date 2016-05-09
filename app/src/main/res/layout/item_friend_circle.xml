@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/item_friend_head_iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/item_friend_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/item_friend_head_iv"
+        android:gravity="center_vertical"
+        android:textColor="@color/name_blue"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/item_friend_content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_friend_name_tv"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/item_friend_head_iv"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/item_friend_content_iv"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/item_friend_content_tv"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/item_friend_head_iv"
+        android:background="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/item_friend_good_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_friend_content_iv"
+        android:layout_toRightOf="@+id/item_friend_head_iv" />
+
+    <LinearLayout
+        android:id="@+id/item_friend_comment_liner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_friend_good_tv"
+        android:layout_toRightOf="@+id/item_friend_head_iv"
+        android:orientation="vertical"></LinearLayout>
+
+    <ImageView
+        android:id="@+id/item_friend_send_iv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/item_friend_comment_liner"
+        android:background="@mipmap/ic_pinglun" />
+
+    <ImageView
+        android:id="@+id/item_friend_good_iv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/item_friend_comment_liner"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/item_friend_send_iv"
+        android:background="@mipmap/ic_zan" />
+
+</RelativeLayout>

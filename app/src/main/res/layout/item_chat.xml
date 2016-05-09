@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/head_image_chat_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/head_image_margin_dimen"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/nik_name_chat_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/nik_name_margin_top"
+        android:layout_marginBottom="@dimen/nik_name_margin_bottom"
+        android:layout_toRightOf="@+id/head_image_chat_fragment"
+        android:text="@string/nic_name"/>
+
+    <TextView
+        android:id="@+id/message_chat_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/head_image_chat_fragment"
+        android:layout_below="@+id/nik_name_chat_item"
+        android:text="@string/message"/>
+
+    <TextView
+        android:id="@+id/time_chat_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/time_margin_top"
+        android:layout_marginRight="@dimen/time_margin_right"
+        android:text="@string/time"/>
+
+
+</RelativeLayout>

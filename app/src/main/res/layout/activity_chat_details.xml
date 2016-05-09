@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_black">
+
+
+        <ImageView
+            android:id="@+id/go_back_chat_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/kong_jian_margin_dimen"
+            android:src="@mipmap/fanhui" />
+
+        <TextView
+            android:id="@+id/friend_name_chat_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/go_back_chat_details"
+            android:text="@string/nic_name"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/biao_ti_nik_name_text_sizi" />
+
+        <ImageView
+            android:id="@+id/friend_details_chat_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/kong_jian_margin_dimen"
+            android:src="@mipmap/ren" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_view_chat_details"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@null"></ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/voice_chat_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/kong_jian_margin_dimen"
+            android:src="@mipmap/yuyinchatdetails" />
+
+
+        <ImageView
+            android:id="@+id/text_chat_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/kong_jian_margin_dimen"
+            android:visibility="gone"
+            android:src="@mipmap/wenzishuru" />
+
+        <EditText
+            android:id="@+id/edit_text_chat_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/liao_tian_xiang_qing_xia_mian_zhong_jian_de_kong_jian"
+            android:layout_marginBottom="@dimen/liao_tian_xiang_qing_xia_mian_zhong_jian_de_kong_jian"
+            android:imeOptions="actionSend"
+
+            android:singleLine="true"
+
+
+
+            />
+
+
+        <Button
+            android:id="@+id/voice_button_chat_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/liao_tian_xiang_qing_xia_mian_zhong_jian_de_kong_jian"
+            android:layout_marginTop="@dimen/liao_tian_xiang_qing_xia_mian_zhong_jian_de_kong_jian"
+            android:text="@string/voice_button_text"
+            android:visibility="gone"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/face_chat_details"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/kong_jian_margin_dimen"
+            android:layout_marginLeft="@dimen/kong_jian_margin_dimen"
+            android:layout_marginTop="@dimen/kong_jian_margin_dimen"
+            android:src="@mipmap/biaoqing" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/kong_jian_margin_dimen"
+            android:src="@mipmap/jiahao" />
+    </LinearLayout>
+
+
+</LinearLayout>

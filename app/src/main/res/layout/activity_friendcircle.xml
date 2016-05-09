@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/menu_black">
+
+
+            <ImageView
+                android:id="@+id/go_back_friendCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/kong_jian_margin_dimen"
+                android:src="@mipmap/fanhui" />
+
+            <TextView
+                android:id="@+id/title_friendCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/go_back_friendCircle"
+                android:text="朋友圈"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/biao_ti_nik_name_text_sizi" />
+
+            <ImageView
+                android:id="@+id/camera_friendCircle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/kong_jian_margin_dimen"
+                android:src="@mipmap/ic_camera" />
+        </RelativeLayout>
+
+
+    <com.my.instantmessag.widget.RefreshListView
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.my.instantmessag.widget.RefreshListView>
+</LinearLayout>

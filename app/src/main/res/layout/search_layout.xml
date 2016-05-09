@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_margin="@dimen/search_layout_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/search_image"
+                android:layout_width="@dimen/search_layout_kong_jian_dimen"
+                android:layout_height="@dimen/search_layout_kong_jian_dimen"
+                android:layout_marginTop="@dimen/kong_jian_margin_top_right"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/text"
+                android:src="@mipmap/sousuo"/>
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/kong_jian_margin_top_right"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/search"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:layout_width="@dimen/search_layout_kong_jian_dimen"
+        android:layout_height="@dimen/search_layout_kong_jian_dimen"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/kong_jian_margin_top_right"
+        android:src="@mipmap/yuyin"/>
+
+
+
+
+</RelativeLayout>

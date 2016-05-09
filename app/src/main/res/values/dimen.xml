@@ -1,0 +1,18 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="head_image_margin_dimen">10dp</dimen>
+    <dimen name="nik_name_margin_top">15dp</dimen>
+    <dimen name="nik_name_margin_bottom">5dp</dimen>
+    <dimen name="time_margin_top">20dp</dimen>
+    <dimen name="time_margin_right">10dp</dimen>
+    <dimen name="search_layout_margin">10dp</dimen>
+    <dimen name="search_layout_kong_jian_dimen">30dp</dimen>
+    <dimen name="kong_jian_margin_top_right">10dp</dimen>
+    <dimen name="kong_jian_margin_dimen">10dp</dimen>
+    <dimen name="biao_ti_nik_name_text_sizi">20sp</dimen>
+    <dimen name="chat_details_item_text_size">15sp</dimen>
+    <dimen name="liao_tian_xiang_qing_xia_mian_zhong_jian_de_kong_jian">5dp</dimen>
+
+</resources>

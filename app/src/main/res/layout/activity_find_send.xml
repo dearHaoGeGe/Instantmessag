@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/menu_black">
+
+
+        <ImageView
+            android:id="@+id/go_back_friendSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/kong_jian_margin_dimen"
+            android:src="@mipmap/fanhui" />
+
+        <ImageView
+            android:id="@+id/find_send_finish"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/kong_jian_margin_dimen"
+            android:src="@mipmap/ic_finish" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/find_send_iv"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+               />
+
+
+            <EditText
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:gravity="start"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/find_send_iv"
+                android:id="@+id/find_send_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/biankuang4"
+                android:hint="请输入内容" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>

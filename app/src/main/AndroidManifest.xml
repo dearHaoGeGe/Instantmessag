@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.my.instantmessag">
+
+    <!-- 创建快捷方式添加的权限 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <!-- 开机启动权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- Required -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+
+    <application
+        android:name=".base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/weixin"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <!--parse数据库-->
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="@string/parse_app_id" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="@string/parse_client_key" />
+
+        <!-- 第一次的引导页 -->
+        <activity android:name=".activity.GuideActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 闪屏页 -->
+        <activity android:name=".activity.SplashActivity"
+            android:theme="@style/MyAppNoTitleFullScreen"/>
+        <!-- 登录页-->
+        <activity android:name=".activity.LoginActivity" />
+        <!--注册-->
+        <activity android:name=".activity.RegisterActivity" />
+        <!-- 主的activity -->
+        <activity android:name=".activity.MainActivity" />
+        <!-- 聊天详情activity -->
+        <activity android:name=".ui.chat.v.ChatDetailsActivity" />
+        <!-- 搜索好友activity -->
+        <activity android:name=".activity.SearchFriendsActivity" />
+        <!-- 朋友圈activity-->
+        <activity android:name=".ui.find.FriendCircleActivity" />
+        <!-- 好友详情activity-->
+        <activity android:name=".activity.FriendDetailsActivity" />
+        <!-- 设置页面的联系人黑名单Activity -->
+        <activity android:name=".activity.ContactsBlackListActivity" />
+
+        <activity android:name=".ui.find.FindSendActivity" />
+
+        <!-- 扫描二维码 -->
+        <activity android:name=".activity.ScanActivity" />
+        <!-- 穿件二维码 -->
+        <activity android:name=".activity.CreateQRCodeAty" />
+        <!-- 个人资料 -->
+        <activity android:name=".activity.PersonalDataActivity" />
+
+        <!-- AppService -->
+        <service
+            android:name=".service.AppService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <!-- 开机启动的广播接受者 -->
+        <receiver android:name=".broadcast.ServiceReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- 设置环信应用的appkey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="jinghao#suiyiliao" />
+        <!-- 声明sdk所需的service SDK核心功能-->
+        <service android:name="com.easemob.chat.EMChatService" />
+
+
+    </application>
+
+</manifest>
